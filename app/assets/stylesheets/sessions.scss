@@ -1,3 +1,18 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.field {
+  line-height: 30px;
+}
+
+#last-field {
+  padding-bottom: 1.5rem;
+}
+
+.text-box {
+  display: block;
+}
+
+.sign-up-btn {
+  margin-top: 1rem;
+}

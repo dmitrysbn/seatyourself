@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-
+  
   before_action :load_restaurants, only: [:new, :create]
   before_action :load_reservation, only: [:new, :create]
 
