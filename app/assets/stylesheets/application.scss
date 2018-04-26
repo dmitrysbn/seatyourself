@@ -27,9 +27,7 @@
       color: $darkpink;
       text-decoration: none;
     }
-      img {
-        width: 100%;
-      }
+
 }
 
 body {
@@ -99,7 +97,7 @@ h1, h2, h3 {
 }
 
 .hero-image {
-  background: image-url("hero-image.jpg") 50% no-repeat;
+  background: url('../hero-image.jpg') 50% no-repeat;
   background-size: cover;
   height: $hero-height;
   text-align: center;

@@ -9,7 +9,6 @@ class Restaurant < ApplicationRecord
 
   validate :restaurant_hours
 
-
   def restaurant_hours
     if hours_open >= hours_closed
       errors.add(:hours_closed, "Closing time cannot be earlier than the opening time")

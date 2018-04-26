@@ -1,56 +1,70 @@
 <%= render 'error', restaurant: @restaurant %>
 
 <%= form_for(restaurant) do |f| %>
-  <p>
+
+  <div class='field'>
     <%= f.label :restaurant_name %><br>
-    <%= f.text_field :restaurant_name %>
-  </p>
-  <p>
+    <%= f.text_field :restaurant_name, :class => "text-box"%>
+  </div>
+
+  <div class="field">
     <%= f.label :url %><br>
-    <%= f.text_field :url %>
-  </p>
-  <p>
+    <%= f.text_field :url, :class => "text-box"%>
+  </div>
+
+  <div class="field">
     <%= f.label :hours_open %><br>
     <%= f.number_field(:hours_open, in: 0..24, step: 1)%>
-  </p>
-  <p>
+  </div>
+
+  <div class="field">
     <%= f.label :hours_closed %><br>
     <%= f.number_field(:hours_closed, in: 0..24, step: 1) %>
-  </p>
-  <p>
-    <%= f.label :capacity %><br>
-    <%= f.number_field :capacity %>
-  </p>
-  <p>
-    <%= f.label :min_size %><br>
-    <%= f.number_field :min_size %>
-  </p>
-  <p>
-    <%= f.label :max_size %><br>
-    <%= f.number_field :max_size %>
-  </p>
-  <p>
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </p>
-  <p>
-    <%= f.label :neighbourhood %><br>
-    <%= f.text_field :neighbourhood %>
-  </p>
-  <p>
-    <%= f.label :price_range %><br>
-    <%= f.text_field :price_range %>
-  </p>
-  <p>
-    <%= f.label :summary %><br>
-    <%= f.text_area :summary %>
-  </p>
-  <p>
-    <%= f.label :restaurant_url %><br>
-    <%= f.text_field :restaurant_url %>
-  </p>
+  </div>
 
+  <div class="field">
+    <%= f.label :capacity %><br>
+    <%= f.number_field :capacity, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :min_size %><br>
+    <%= f.number_field :min_size, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :max_size %><br>
+    <%= f.number_field :max_size, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :neighbourhood %><br>
+    <%= f.text_field :neighbourhood, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_range %><br>
+    <%= f.text_field :price_range, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :summary %><br>
+    <%= f.text_area :summary, :class => "text-box"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :restaurant_url %><br>
+    <%= f.text_field :restaurant_url, :class => "text-box"%>
+  </div>
+
+  <div class="sign-up-btn">
     <%= f.submit "Save" , :class => "button" %>
-    
-  </p>
+  </div>
+
+
 <% end %>
