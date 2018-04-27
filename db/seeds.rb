@@ -10,7 +10,7 @@ bill = User.create(first_name: "Bill", last_name: "Li", email: "bill@gmail.com",
 sean = User.create(first_name: "Sean", last_name: "Learner", email: "sean@gmail.com", password: "test", password_confirmation: "test", loyalty_points: 100)
 
 Restaurant.destroy_all
-restaurant1 = Restaurant.create(restaurant_name: 'Reds Wine Tavern', hours_open: 16, hours_closed: 23, capacity: 50, min_size: 2, max_size: 10, url: 'https://resizer.otstatic.com/v2/profiles/legacy/3584.jpg', address: "77 Adelaide St W, Toronto, ON M5H 1P9", neighbourhood: "Financial District", price_range: "$$", summary: "Great place to eat", restaurant_url: "redswinetavern.com", user_id: dmitry.id)
+restaurant1 = Restaurant.create(restaurant_name: 'Reds Wine Tavern', hours_open: 16, hours_closed: 24, capacity: 50, min_size: 2, max_size: 10, url: 'https://resizer.otstatic.com/v2/profiles/legacy/3584.jpg', address: "77 Adelaide St W, Toronto, ON M5H 1P9", neighbourhood: "Financial District", price_range: "$$", summary: "Great place to eat", restaurant_url: "redswinetavern.com", user_id: dmitry.id)
 
 restaurant2 = Restaurant.create(restaurant_name: 'The Restaurant at the Adelaide', hours_open: 16, hours_closed: 24, capacity: 100, min_size: 3, max_size: 8, url: 'https://resizer.otstatic.com/v2/profiles/legacy/984100.jpg', address: "325 Bay St., 31st floor, Toronto, ON M5H 4G3", neighbourhood: "Financial District", price_range: "$$", summary: "Great place to eat", restaurant_url: "adelaidehoteltoronto.com", user_id: dmitry.id)
 
@@ -23,13 +23,13 @@ restaurant5 = Restaurant.create(restaurant_name: 'Terroni ADELAIDE', hours_open:
 
 Reservation.destroy_all
 reservations = Reservation.create([
-  {email: 'super@nova@gmail.com', restaurant_name: 'Reds Wine Tavern', date: Date.today + rand(30), time: 17, number_of_people: 2, restaurant_id: restaurant1.id, user_id: dmitry.id},
+  {email: 'dmitry@gmail.com', restaurant_name: 'Reds Wine Tavern', date: Date.today + rand(30), time: 17, number_of_people: 2, restaurant_id: restaurant1.id, user_id: dmitry.id},
 
-  {email: 'super@nova@gmail.com', restaurant_name: 'Reds Wine Tavern', date: Date.today + rand(30), time: 19, number_of_people: 4, restaurant_id: restaurant1.id, user_id: sean.id},
+  {email: 'sean@gmail.com', restaurant_name: 'Reds Wine Tavern', date: Date.today + rand(30), time: 19, number_of_people: 4, restaurant_id: restaurant1.id, user_id: sean.id},
 
-  {email: 'super@nova@gmail.com', restaurant_name: 'Katana on Bay', date: Date.today + rand(30), time: 19, number_of_people: 2, restaurant_id: restaurant3.id, user_id: bill.id},
+  {email: 'bill@gmail.com', restaurant_name: 'Katana on Bay', date: Date.today + rand(30), time: 19, number_of_people: 2, restaurant_id: restaurant3.id, user_id: bill.id},
 
-  {email: 'super@nova@gmail.com', restaurant_name: 'Canoe Restaurant and Bar', date: Date.today + rand(30), time: 17, number_of_people: 2, restaurant_id: restaurant4.id, user_id: debbie.id},
+  {email: 'debbie@gmail.com', restaurant_name: 'Canoe Restaurant and Bar', date: Date.today + rand(30), time: 17, number_of_people: 2, restaurant_id: restaurant4.id, user_id: debbie.id},
 
-  {email: 'super@nova@gmail.com', restaurant_name: 'Terroni ADELAIDE', date: Date.today + rand(30), time: 19, number_of_people: 2, restaurant_id: restaurant5.id, user_id: alex.id},
+  {email: 'alex@gmail.com', restaurant_name: 'Terroni ADELAIDE', date: Date.today + rand(30), time: 19, number_of_people: 2, restaurant_id: restaurant5.id, user_id: alex.id},
 ])
